@@ -19,12 +19,13 @@ const ClientDetailsForm = ({ clientInfo, setClientInfo }) => {
       </div>
       <div>
         <label className="block font-semibold mb-1">Client Address</label>
-        <input
-          type="text"
+        <textarea
           name="address"
+          rows="3"
           value={clientInfo.address}
           onChange={handleChange}
-          className="w-full p-2 border rounded"
+          className="w-full p-2 border rounded resize-none"
+          placeholder="Enter full address"
         />
       </div>
       <div>
