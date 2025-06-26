@@ -5,7 +5,9 @@ import { useRef } from "react";
 
 const App = () => {
   const [items, setItems] = useState([
+
     { description: "", quantity: 1, rate: 0, amount: 0 }
+
   ]);
 
   const [subtotal, setSubtotal] = useState(0);
@@ -23,6 +25,7 @@ const App = () => {
   const invoiceRef = useRef();
 
   useEffect(() => {
+
     const newSubtotal = items.reduce(
       (sum, item) => sum + item.quantity * item.rate,
       0
@@ -33,6 +36,7 @@ const App = () => {
   const handleItemChange = (index, field, value) => {
 
     const updatedItems = [...items];
+    
     if (field === "quantity" || field === "rate") {
 
       value = parseFloat(value);

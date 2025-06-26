@@ -1,5 +1,7 @@
 # Invoice Builder
 
+-- Used Reactjs, Router, Css to devolop and to deploye Netlify.
+
 ## 🚀 Features
 
 - Add/edit/remove invoice line items
